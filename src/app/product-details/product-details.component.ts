@@ -12,6 +12,7 @@ import { CartService } from '../cart.service';
 export class ProductDetailsComponent implements OnInit {
   product;
     addToCart(product) {
+      this.cartService.addToCart(product);
     window.alert('Tu producto fue agregado al carrito!');
   }  
   constructor(
